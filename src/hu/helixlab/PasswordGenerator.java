@@ -7,8 +7,8 @@ import java.util.Random;
  */
 public class PasswordGenerator {
     //Random jelszó generálás a paraméterként kapott szám hosszának megfelelő számú karakterrel.
-
-    public String generatePassword(int length) {
+//átállítva static-ra, meghívható példányosítás nélkül is (user konstruktorban)
+    public static String generatePassword(int length) {
         //lehetséges karakterek
         String character = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!%?";
         //kell egy üres string mert csak ahhoz tudja hozzáfűzni a karaktereket, különben beleírja hogy null.

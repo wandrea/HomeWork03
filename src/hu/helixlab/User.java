@@ -53,11 +53,12 @@ public class User {
     public User() {
     }
 
-    public User(int id, String firstName, String lastName, String password, int age) {
+    public User(int id, String firstName, String lastName, int age) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.password = password;
+        //meghívva a generatePassword metódust, legenerál 10 hosszúságú jelszót minden egyes user obijektum esetén.
+        this.password = PasswordGenerator.generatePassword(10);
         this.age = age;
     }
     public User (User user){
