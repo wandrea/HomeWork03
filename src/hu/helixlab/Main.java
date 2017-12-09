@@ -3,6 +3,7 @@ package hu.helixlab;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	PasswordGenerator pg = new PasswordGenerator();
+        System.out.println(pg.generatePassword(9));
     }
 }
